@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex System Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #db1818;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 20px;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        .container {
+            display: flex;
+            width: 250px;
+            height: 150px;
+            border: 2px solid white;
+            margin: 15px auto;
+            background: #eee;
+        }
+
+        .box {
+            width: 40px;
+            height: 40px;
+            background: black;
+            margin: 5px;
+        }
+
+        /* Justify Content Examples */
+        .start { justify-content: flex-start; }
+        .center { justify-content: center; }
+        .end { justify-content: flex-end; }
+        .space-between { justify-content: space-between; }
+        .space-around { justify-content: space-around; }
+        .space-evenly { justify-content: space-evenly; }
+
+        /* Align Items Examples */
+        .align-start { align-items: flex-start; }
+        .align-center { align-items: center; }
+        .align-end { align-items: flex-end; }
+        .align-stretch { align-items: stretch; }
+
+        .stretch .box {
+            height: auto;
+        }
+
+        .title {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Flex System Overview</h1>
+
+<!-- Justify Content -->
+<div class="section">
+    <h2>Justify Content</h2>
+
+    <div class="container start">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="title">flex-start</div>
+
+    <div class="container center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="title">center</div>
+
+    <div class="container end">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="title">flex-end</div>
+
+    <div class="container space-between">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="title">space-between</div>
+
+    <div class="container space-around">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="title">space-around</div>
+
+    <div class="container space-evenly">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="title">space-evenly</div>
+</div>
+
+<!-- Align Items -->
+<div class="section">
+    <h2>Align Items</h2>
+
+    <div class="container align-start">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="title">flex-start</div>
+
+    <div class="container align-center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="title">center</div>
+
+    <div class="container align-end">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="title">flex-end</div>
+
+    <div class="container align-stretch stretch">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="title">stretch</div>
+
+</div>
+
+</body>
+</html>
